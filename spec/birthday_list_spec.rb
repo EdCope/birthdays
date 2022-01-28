@@ -19,6 +19,10 @@ describe BirthdayList do
     it "should pass back an array" do
       expect(subject.view_friends).to be_a(Array)
     end
+    it "should return an array including 'Bob'" do
+      subject.add_friend("Bob")
+      expect(subject.view_friends).to include("Bob")
+    end
   end
   
 end

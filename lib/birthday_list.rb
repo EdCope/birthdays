@@ -1,9 +1,12 @@
 class BirthdayList
+  def initialize
+    @friends =[]
+  end
   def add_friend(name)
+    @friends << name
     return name + " Added"
   end
   def view_friends
-    friends = []
-    friends
+    return @friends
   end
 end
