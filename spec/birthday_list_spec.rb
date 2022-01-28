@@ -8,6 +8,9 @@ describe BirthdayList do
     it "should respond to add friend method" do
       expect(subject).to respond_to :add_friend
     end
+    it "should return a message saying friend added" do
+      expect(subject.add_friend("Bob")).to eq "Bob Added"
+    end
   end
   
 end
