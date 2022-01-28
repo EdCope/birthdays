@@ -12,5 +12,10 @@ describe BirthdayList do
       expect(subject.add_friend("Bob")).to eq "Bob Added"
     end
   end
+  describe "#view_friends" do
+    it "should respond to view friend method" do
+      expect(subject).to respond_to :view_friends
+    end
+  end
   
 end
