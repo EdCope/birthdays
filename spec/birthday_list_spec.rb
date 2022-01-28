@@ -16,6 +16,9 @@ describe BirthdayList do
     it "should respond to view friend method" do
       expect(subject).to respond_to :view_friends
     end
+    it "should pass back an array" do
+      expect(subject.view_friends).to be_a(Array)
+    end
   end
   
 end

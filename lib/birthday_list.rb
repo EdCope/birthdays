@@ -3,5 +3,7 @@ class BirthdayList
     return name + " Added"
   end
   def view_friends
+    friends = []
+    friends
   end
 end
